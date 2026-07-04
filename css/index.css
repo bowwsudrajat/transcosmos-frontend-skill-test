@@ -1,1 +1,31 @@
 /* Base styles */
+
+:root {
+  /* Container */
+  --container-width: 1280px;
+  --container-padding: 32px;
+
+  /* Space */
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Color */
+  --color-white: #fff;
+  --color-black: #111;
+}
+
+.container {
+  width: min(100% - 64px, var(--container-width));
+  margin-inline: auto;
+}
