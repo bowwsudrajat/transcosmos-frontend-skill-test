@@ -9,13 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Unbounded:wght@200;300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="site-logo" href="#" aria-label="Influenzailla home">
         <div class="site-logo__box">
-          <img class="site-logo__star" src="images/star-header.png" alt="" width="34" height="34">
+          <img class="site-logo__star" src="images/ico_star_01.png" alt="" width="34" height="34">
           <span class="site-logo__name">Influenzailla</span>
           <span class="site-logo__tagline">bespoke design and marketing services</span>
         </div>
@@ -28,7 +31,7 @@
           <li class="site-nav__item"><a class="site-nav__link" href="#team">TEAM</a></li>
           <li class="site-nav__item site-nav__item--language">
             <button class="site-nav__language-btn" type="button" aria-label="Change language">
-              <img class="site-nav__language-icon" src="images/icon-vector-header.svg" alt="" width="16" height="16">
+              <img class="site-nav__language-icon" src="images/ico_globe_01.svg" alt="" width="16" height="16">
             </button>
           </li>
           <li class="site-nav__item"><a class="site-nav__link" href="#boost">BOOST PROGRAM</a></li>
@@ -47,24 +50,52 @@
   <main>
     <section class="hero-section" aria-labelledby="hero-heading">
       <div class="hero-section__bg" aria-hidden="true">
-        <img src="images/gradient-wave.jpg" alt="">
+        <img src="images/img_gradient-wave_01.jpg" alt="">
       </div>
       <div class="container hero-section__content">
-        <p class="hero-section__year gradient-text">2023</p>
-        <p class="hero-section__greeting gradient-text">hi there, let's get started!</p>
-        <h1 class="hero-section__title" id="hero-heading">
-          <span class="gradient-text">Influence your </span><span class="hero-section__tilde gradient-text">˜˜˜˜˜˜˜˜˜˜</span><span class="gradient-text"> audience</span>
-        </h1>
-        <p class="hero-section__subtitle">boost your brand with our marketing expertise</p>
-        <div class="hero-section__aside">
-          <img class="hero-section__star" src="images/star-accent.png" alt="" width="29" height="29">
-          <p class="hero-section__description gradient-text">We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways.</p>
+        <div class="hero-top">
+          <p class="hero-section__year gradient-text">2023</p>
+          <p class="hero-section__greeting gradient-text">
+            hi there, let's get started!
+          </p>
+        </div>
+        <div class="hero-main">
+          <div class="hero-left">
+            <div class="hero-title-wrapper">
+              <div class="hero-title__line hero-title__line--top">
+                <h1 class="hero-section__title gradient-text">
+                  Influence your
+                </h1>
+                <img
+                  src="images/ico_tidle_01.svg"
+                  alt=""
+                  class="hero-title__tilde"
+                  aria-hidden="true"
+                >
+              </div>
+              <div class="hero-title__line hero-title__line--bottom">
+                <div class="hero-title__audience">
+                  <h1 class="hero-section__title gradient-text">
+                    audience
+                  </h1>
+                </div>
+                <p class="hero-section__subtitle">
+                  boost your brand with our marketing expertise
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-right">
+            <img class="hero-section__star" src="images/ico_star_03.png" alt="" width="29" height="29">
+            <p class="hero-section__description gradient-text">
+              We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <nav class="quick-nav" aria-label="Section shortcuts">
-      <div class="quick-nav__overlay" aria-hidden="true"></div>
       <div class="container quick-nav__inner">
         <a class="quick-nav__link gradient-text" href="#about">About us</a>
         <a class="quick-nav__link gradient-text" href="#expertise">Expertise</a>
@@ -82,16 +113,26 @@
         </div>
         <h2 class="about-section__title" id="about-heading">
           <span class="gradient-text">We turn your digital dreams into reality</span>
-          <span class="about-section__tilde gradient-text" aria-hidden="true">˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜</span>
+          <img
+            src="images/ico_tidle_02.svg"
+            alt=""
+            class="about-section__tilde"
+            aria-hidden="true"
+          >
         </h2>
-        <img class="about-section__wave" src="images/wave-decoration-about.png" alt="" width="77" height="28">
+        <img
+          src="images/ico_star_04.png"
+          alt=""
+          class="about-section__wave"
+          aria-hidden="true"
+        >
         <div class="about-section__column about-section__column--bottom">
           <p>Our team of experienced designers and marketing professionals work closely with each client to understand their unique vision and develop tailored solutions that align with their goals.</p>
           <p>From designing eye-catching logos and brand identities, to building custom websites that engage and convert visitors, to crafting effective influencer marketing campaigns, we are dedicated to helping our clients succeed in the digital space.</p>
         </div>
         <aside class="about-section__sphere" aria-label="Since 2006">
           <div class="about-section__sphere-box">
-            <img class="about-section__sphere-image" src="images/sphere-about.png" alt="Decorative 3D gradient sphere">
+            <img class="about-section__sphere-image" src="images/img_sphere-about.png" alt="Decorative 3D gradient sphere">
             <p class="about-section__sphere-label gradient-text">since 2006</p>
           </div>
         </aside>
@@ -140,15 +181,12 @@
         </div>
         <div class="objectives-tabs" role="tablist" aria-label="Service categories">
           <button class="objectives-tabs__tab objectives-tabs__tab--active" role="tab" aria-selected="true" aria-controls="tab-panel-branding" id="tab-branding" data-tab="branding">
-            <img class="objectives-tabs__icon" src="images/tab-circle.png" alt="" width="48" height="48">
             <span class="objectives-tabs__label gradient-text">Branding</span>
           </button>
           <button class="objectives-tabs__tab" role="tab" aria-selected="false" aria-controls="tab-panel-design" id="tab-design" data-tab="design">
-            <img class="objectives-tabs__icon" src="images/tab-circle.png" alt="" width="48" height="48">
             <span class="objectives-tabs__label gradient-text">Design</span>
           </button>
           <button class="objectives-tabs__tab" role="tab" aria-selected="false" aria-controls="tab-panel-marketing" id="tab-marketing" data-tab="marketing">
-            <img class="objectives-tabs__icon" src="images/tab-circle.png" alt="" width="48" height="48">
             <span class="objectives-tabs__label gradient-text">Marketing</span>
           </button>
         </div>
@@ -180,7 +218,7 @@
           <span class="gradient-text">Expertise and </span><span class="expertise-section__tilde gradient-text">˜˜˜˜˜˜˜˜</span><span class="gradient-text"> experience</span>
         </h2>
         <p class="expertise-section__lead gradient-text">We believe that building long-lasting relationships with our clients is key to achieving success. We are passionate about what we do, and we are committed to delivering exceptional results for every client we work with.</p>
-        <img class="expertise-section__wave" src="images/wave-decoration.png" alt="" width="77" height="28">
+        <img class="expertise-section__wave" src="images/star-union.png" alt="" width="77" height="28">
         <div class="expertise-section__columns">
           <div class="expertise-section__column">
             <p>Our team of talented designers and marketers works closely with each of our clients, taking the time to understand their unique needs and goals, and developing customized solutions that exceed their expectations.</p>
@@ -223,11 +261,11 @@
         </div>
         <div class="project-slider__controls">
           <button class="project-slider__arrow project-slider__arrow--prev" type="button" aria-label="Previous project">
-            <img src="images/arrow-left.png" alt="" width="40" height="40">
+            <img src="images/le_arrow-up-s-line.png" alt="" width="40" height="40">
           </button>
           <div class="project-slider__dots" aria-hidden="true"></div>
           <button class="project-slider__arrow project-slider__arrow--next" type="button" aria-label="Next project">
-            <img src="images/arrow-right.png" alt="" width="39" height="39">
+            <img src="images/ri_arrow-up-s-line.png" alt="" width="39" height="39">
           </button>
         </div>
       </div>
@@ -238,24 +276,44 @@
     <div class="container site-footer__inner">
       <a class="site-logo site-logo--footer" href="#" aria-label="Influenzailla home">
         <div class="site-logo__box">
-          <img class="site-logo__star" src="images/star-footer.png" alt="" width="34" height="34">
+          <img class="site-logo__star" src="images/ico_star_02.png" alt="" width="34" height="34">
           <span class="site-logo__name gradient-text">Influenzailla</span>
           <span class="site-logo__tagline gradient-text">bespoke design and marketing services</span>
         </div>
       </a>
       <nav class="site-nav site-nav--footer" aria-label="Footer navigation">
         <ul class="site-nav__grid">
-          <li class="site-nav__item"><a class="site-nav__link gradient-text" href="#about">ABOUT</a></li>
-          <li class="site-nav__item"><a class="site-nav__link gradient-text" href="#services">SERVISES</a></li>
-          <li class="site-nav__item"><a class="site-nav__link gradient-text" href="#projects">CASES</a></li>
-          <li class="site-nav__item"><a class="site-nav__link gradient-text" href="#team">TEAM</a></li>
-          <li class="site-nav__item site-nav__item--icon" aria-hidden="true"></li>
-          <li class="site-nav__item site-nav__item--wide"><a class="site-nav__link gradient-text" href="#boost">BOOST PROGRAM</a></li>
-          <li class="site-nav__item"><a class="site-nav__link gradient-text" href="#products">PRODUCTS</a></li>
-          <li class="site-nav__item site-nav__item--narrow"><a class="site-nav__link gradient-text" href="#book">BOOK</a></li>
-          <li class="site-nav__item"><a class="site-nav__link gradient-text" href="#blog">BLOG</a></li>
+          <li class="site-nav__item">
+            <a class="site-nav__link gradient-text" href="#about">ABOUT</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link gradient-text" href="#services">SERVISES</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link gradient-text" href="#projects">CASES</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link gradient-text" href="#team">TEAM</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link gradient-text" href="/">
+              <img src="images/ico_globe_01.svg" alt="" width="16" height="16">
+            </a>
+          </li>
+          <li class="site-nav__item site-nav__item--wide">
+            <a class="site-nav__link gradient-text" href="#boost">BOOST PROGRAM</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link gradient-text" href="#products">PRODUCTS</a>
+          </li>
+          <li class="site-nav__item site-nav__item--narrow">
+            <a class="site-nav__link gradient-text" href="#book">BOOK</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link gradient-text" href="#blog">BLOG</a>
+          </li>
         </ul>
-        <img class="site-nav__arrow-icon" src="images/icon-vector-footer.svg" alt="" width="16" height="16">
+        
       </nav>
     </div>
   </footer>
