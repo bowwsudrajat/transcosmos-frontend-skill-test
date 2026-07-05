@@ -16,7 +16,9 @@
   <link rel="stylesheet" href="css/objective.css">
   <link rel="stylesheet" href="css/expertise.css">
   <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <header class="site-header">
@@ -328,7 +330,7 @@
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
-      <a class="site-logo site-logo--footer" href="#" aria-label="Influenzailla home">
+      <a class="site-logo" href="#" aria-label="Influenzailla home">
         <div class="site-logo__box">
           <img class="site-logo__star" src="images/ico_star_02.png" alt="" width="34" height="34">
           <span class="site-logo__name gradient-text">Influenzailla</span>
@@ -337,38 +339,25 @@
       </a>
       <nav class="site-nav site-nav--footer" aria-label="Footer navigation">
         <ul class="site-nav__grid">
-          <li class="site-nav__item">
-            <a class="site-nav__link gradient-text" href="#about">ABOUT</a>
+          <li class="site-nav__item gradient-text"><a class="site-nav__link" href="#about">ABOUT</a></li>
+          <li class="site-nav__item gradient-text"><a class="site-nav__link" href="#services">SERVICES</a></li>
+          <li class="site-nav__item gradient-text"><a class="site-nav__link" href="#projects">CASES</a></li>
+          <li class="site-nav__item gradient-text"><a class="site-nav__link" href="#team">TEAM</a></li>
+          <li class="site-nav__item site-nav__item--language">
+            <button class="site-nav__language-btn" type="button" aria-label="Change language">
+              <img class="site-nav__language-icon" src="images/ico_globe_02.svg" alt="" width="16" height="16">
+            </button>
           </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link gradient-text" href="#services">SERVISES</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link gradient-text" href="#projects">CASES</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link gradient-text" href="#team">TEAM</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link gradient-text" href="/">
-              <img src="images/ico_globe_01.svg" alt="" width="16" height="16">
-            </a>
-          </li>
-          <li class="site-nav__item site-nav__item--wide">
-            <a class="site-nav__link gradient-text" href="#boost">BOOST PROGRAM</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link gradient-text" href="#products">PRODUCTS</a>
-          </li>
-          <li class="site-nav__item site-nav__item--narrow">
-            <a class="site-nav__link gradient-text" href="#book">BOOK</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link gradient-text" href="#blog">BLOG</a>
-          </li>
+          <li class="site-nav__item gradient-text"><a class="site-nav__link" href="#boost">BOOST PROGRAM</a></li>
+          <li class="site-nav__item gradient-text"><a class="site-nav__link" href="#products">PRODUCTS</a></li>
+          <li class="site-nav__item gradient-text"><a class="site-nav__link" href="#book">BOOK</a></li>
+          <li class="site-nav__item gradient-text"><a class="site-nav__link" href="#blog">BLOG</a></li>
         </ul>
-        
       </nav>
+      <button class="site-menu-btn" type="button" aria-label="Menu" aria-expanded="false">
+        <span class="site-menu-btn__label gradient-text">Menu</span>
+        <span class="site-menu-btn__icon" aria-hidden="true"></span>
+      </button>
     </div>
   </footer>
 
