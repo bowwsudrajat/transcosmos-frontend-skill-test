@@ -9,8 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Unbounded:wght@200;300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -106,36 +107,65 @@
 
     <section class="about-section" id="about" aria-labelledby="about-heading">
       <div class="container about-section__inner">
-        <p class="about-section__location gradient-text">London 2006</p>
-        <div class="about-section__column about-section__column--top">
-          <p>Our creative design bureau is based in the heart of London and specializes in digital branding, website design, and influence marketing.</p>
-          <p>We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways.</p>
-        </div>
-        <h2 class="about-section__title" id="about-heading">
-          <span class="gradient-text">We turn your digital dreams into reality</span>
-          <img
-            src="images/ico_tidle_02.svg"
-            alt=""
-            class="about-section__tilde"
-            aria-hidden="true"
-          >
-        </h2>
-        <img
-          src="images/ico_star_04.png"
-          alt=""
-          class="about-section__wave"
-          aria-hidden="true"
-        >
-        <div class="about-section__column about-section__column--bottom">
-          <p>Our team of experienced designers and marketing professionals work closely with each client to understand their unique vision and develop tailored solutions that align with their goals.</p>
-          <p>From designing eye-catching logos and brand identities, to building custom websites that engage and convert visitors, to crafting effective influencer marketing campaigns, we are dedicated to helping our clients succeed in the digital space.</p>
-        </div>
-        <aside class="about-section__sphere" aria-label="Since 2006">
-          <div class="about-section__sphere-box">
-            <img class="about-section__sphere-image" src="images/img_sphere-about.png" alt="Decorative 3D gradient sphere">
-            <p class="about-section__sphere-label gradient-text">since 2006</p>
+        <div class="about">
+          <!-- LEFT COLUMN -->
+          <div class="about-section__left">
+            <div class="about-section__column">
+              <p class="about-section__location gradient-text">
+                London 2006
+              </p>
+              <div class="about__body">
+                <p>
+                  Our creative design bureau is based in the heart of London and specializes in digital branding, website design, and influence marketing.
+                </p>
+                <p>
+                  We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways.
+                </p>
+              </div>
+            </div>
+            <h2 class="about-section__title" id="about-heading">
+              <span class="gradient-text">We turn your digital<br>dreams into reality</span>
+              <img
+                src="images/ico_tidle_02.svg"
+                alt=""
+                class="about-section__tilde"
+                aria-hidden="true"
+              >
+            </h2>
+            <div class="about-section__column">
+              <img
+                src="images/ico_star_04.png"
+                alt=""
+                class="about__star"
+                aria-hidden="true"
+              >
+              <div class="about__body">
+                <p>
+                  Our team of experienced designers and marketing professionals work closely with each client to understand their unique vision and develop tailored solutions that align with their goals.
+                </p>
+                <p>
+                  From designing eye-catching logos and brand identities, to building custom websites that engage and convert visitors, to crafting effective influencer marketing campaigns, we are dedicated to helping our clients succeed in the digital space.
+                </p>
+              </div>
+            </div>
+            
           </div>
-        </aside>
+
+          <!-- RIGHT COLUMN -->
+          <aside class="about-section__card">
+            <div class="about__card-inner">
+              <img
+                src="images/img_sphere-about.png"
+                alt="3D Sphere"
+                class="about__sphere"
+              >
+              <span class="about__since gradient-text">
+                since<br>
+                2006
+              </span>
+            </div>
+          </aside>
+        </div>
       </div>
     </section>
 
@@ -143,19 +173,19 @@
       <div class="container">
         <div class="services-grid">
           <article class="service-card service-card--01">
-            <span class="service-card__number">01</span>
+            <p class="service-card__number">01</p>
             <p class="service-card__text">We create unique brand identities that resonate with your target audience and help you stand out in a crowded marketplace</p>
           </article>
           <article class="service-card service-card--02">
-            <span class="service-card__number">02</span>
+            <p class="service-card__number">02</p>
             <p class="service-card__text">We build custom websites that are visually stunning, easy to navigate, and optimized for search engines</p>
           </article>
           <article class="service-card service-card--03">
-            <span class="service-card__number">03</span>
+            <p class="service-card__number">03</p>
             <p class="service-card__text">We develop influencer campaigns that help you reach a wider audience, build brand awareness, and drive conversions</p>
           </article>
           <article class="service-card service-card--04">
-            <span class="service-card__number">04</span>
+            <p class="service-card__number">04</p>
             <p class="service-card__text">We produce high-quality content that engages your audience, builds trust, and reinforces your brand message</p>
           </article>
         </div>
@@ -165,8 +195,15 @@
     <section class="objectives-section" id="objectives" aria-labelledby="objectives-heading">
       <div class="container objectives-section__inner">
         <div class="objectives-section__header">
-          <h2 class="objectives-section__title gradient-text" id="objectives-heading">Help our clients achive their business objectives</h2>
-          <span class="objectives-section__tilde gradient-text" aria-hidden="true">˜˜˜˜˜˜˜˜˜˜˜˜˜˜</span>
+          <h2 class="objectives-section__title gradient-text" id="objectives-heading">Help our clients achieve their business objectives</h2>
+          <span class="objectives-section__tilde gradient-text" aria-hidden="true">
+            <img
+                src="images/ico_tidle_03.svg"
+                alt=""
+                class="objectives-section__tilde"
+                aria-hidden="true"
+              >
+          </span>
         </div>
         <p class="objectives-section__location gradient-text">London 2006</p>
         <div class="objectives-section__intro">
@@ -192,14 +229,14 @@
         </div>
         <div class="objectives-tabs__panels">
           <div class="objectives-tabs__panel objectives-tabs__panel--active" role="tabpanel" id="tab-panel-branding" aria-labelledby="tab-branding" data-panel="branding">
-            <img class="objectives-tabs__sphere" src="images/sphere-branding.png" alt="" width="49" height="49">
+            <img class="objectives-tabs__sphere" src="images/img_sphere-branding_01.png" alt="">
             <p class="objectives-tabs__panel-text">Our team of experts specializes in creating unique and effective designs</p>
             <p class="objectives-tabs__panel-text objectives-tabs__panel-text--wide">We created marketing materials that were consistent with the new brand identity, such as business cards, brochures, and social media graphics.</p>
           </div>
           <div class="objectives-tabs__panel objectives-tabs__panel--empty" role="tabpanel" id="tab-panel-design" aria-labelledby="tab-design" data-panel="design" hidden></div>
           <div class="objectives-tabs__panel objectives-tabs__panel--empty" role="tabpanel" id="tab-panel-marketing" aria-labelledby="tab-marketing" data-panel="marketing" hidden></div>
         </div>
-        <img class="objectives-section__star" src="images/star-accent.png" alt="" width="29" height="29">
+        <img class="objectives-section__star" src="images/ico_star_03.png" alt="">
         <p class="objectives-section__footer-text">We specialize in creating unique and innovative designs that not only capture the essence of your business but also help you achieve your goals. We believe that great design is about creating a seamless user experience that engages and delights your audience, and we work hard to ensure that every design we create meets this high standard.</p>
       </div>
     </section>
@@ -235,7 +272,9 @@
     <section class="projects-section" id="projects" aria-labelledby="projects-heading">
       <div class="container">
         <h2 class="projects-section__title" id="projects-heading">
-          <span class="gradient-text">Projects for our </span><span class="projects-section__tilde gradient-text">˜˜˜˜˜˜˜</span><span class="gradient-text"> clients </span>
+          <span class="gradient-text">Projects for our </span><span class="projects-section__tilde gradient-text">
+            <img src="images/ico_tidle_01.svg" alt="" class="projects-section__tilde" aria-hidden="true">
+          </span><span class="gradient-text"> clients </span>
         </h2>
         <div class="project-slider">
           <article class="project-card">
