@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Services grid
+   ========================================================================== */
+
+.services-section {
+  padding-block: 0 5rem;
+}
+
+.services-grid {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.service-card {
+  min-height: 18rem;
+  overflow: hidden;
+  padding: 7.5rem 3rem 2rem;
+  position: relative;
+}
+
+.service-card--01 {
+  min-height: 18.0625rem;
+}
+
+.service-card--02 {
+  min-height: 18.375rem;
+}
+
+.service-card--03,
+.service-card--04 {
+  min-height: 18rem;
+}
+
+.service-card::before {
+  background-position: center;
+  background-size: cover;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.service-card--01::before {
+  background-image: url("../images/img_service_01.jpg");
+  background-position: 20% 30%;
+}
+
+.service-card--02::before {
+  background-image: url("../images/img_service_02.jpg");
+  background-position: 60% 20%;
+}
+
+.service-card--03::before {
+  background-image: url("../images/img_service_03.jpg");
+  background-position: 30% 70%;
+}
+
+.service-card--04::before {
+  background-image: url("../images/img_service_04.jpg");
+  background-position: 70% 80%;
+}
+
+.service-card__number,
+.service-card__text {
+  position: relative;
+  z-index: 1;
+}
+
+.service-card__number {
+  color: var(--color-white);
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.service-card__text {
+  font-family: var(--font-primary);
+  font-size: 0.875rem;
+  font-weight: 200;
+  line-height: 1.2;
+  max-width: 17.2638rem;
+}
