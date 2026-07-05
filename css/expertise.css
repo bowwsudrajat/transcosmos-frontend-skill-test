@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Expertise
+   ========================================================================== */
+
+.expertise-section {
+  min-height: 53.5625rem;
+  padding-block: 5.25rem 6rem;
+  position: relative;
+}
+
+.expertise-section__bg {
+  height: 39rem;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.expertise-section__bg img {
+  height: 100%;
+  transform-origin: center center;
+  width: 100%;
+}
+
+.expertise-section__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.expertise-section__top {
+  display: grid;
+  grid-template-columns: minmax(var(--hero-content-width),1fr)var(--hero-aside-width);
+  margin-bottom: 18rem;
+}
+
+.expertise-section__bottom {
+  display: grid;
+  grid-template-columns: minmax(var(--hero-content-width), 1fr) var(--hero-aside-width);
+  margin-bottom: 14rem;
+}
+
+.expertise-section__greeting-wrapper {
+  display: grid;
+  grid-template-columns: 6rem 6rem;
+  gap: 4rem;
+}
+
+.expertise-section__greeting {
+  font-size: 0.75rem;
+  line-height: 1;
+  max-width: 5.125rem;
+}
+
+.expertise-section__greeting--right,
+.expertise-section__greeting--far-right {
+  color: var(--color-white);
+  justify-self: end;
+}
+
+.expertise-section__greeting--right {
+  margin-right: 12rem;
+}
+
+.expertise-section__title {
+  font-family: var(--font-display);
+  font-size: 3.375rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  max-width: 44.3125rem;
+  position: relative;
+}
+
+.expertise-section__tilde {
+  position: absolute;
+  top: -.5rem;
+  left: 19.5rem;
+  width: 7.5rem;
+}
+
+.expertise-section__lead {
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  max-width: 21.875rem;
+}
+
+.expertise-section__wave {
+  height: 1.7416rem;
+  margin-bottom: 2.5rem;
+  width: 4.785rem;
+}
+
+.expertise-section__columns {
+  display: grid;
+  gap: 0 3.125rem;
+  grid-template-columns: 20rem 27rem 27rem;
+  justify-content: end;
+}
+
+.expertise-section__columns-text p {
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.expertise-section__column p:last-child {
+  margin-bottom: 0;
+}
