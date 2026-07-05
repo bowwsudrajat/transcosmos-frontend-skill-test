@@ -237,7 +237,6 @@
   .hero-top {
     align-items: flex-end;
     margin-bottom: 2rem;
-    gap: .5rem;
   }
 
   .hero-section__year {
