@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Objectives
+   ========================================================================== */
+
+.objectives-section {
+  padding-block: 5rem;
+}
+
+.objectives-section__header {
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.objectives-section__title {
+  font-family: var(--font-display);
+  font-size: 3.375rem;
+  font-weight: 300;
+  line-height: 1;
+  max-width: 48.75rem;
+}
+
+.objectives-section__tilde {
+  position: absolute;
+  top: -.5rem;
+  left: 15.5rem;
+  width: 14.5rem;
+}
+
+.objectives-section__location {
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  line-height: 1;
+  margin-top: 1.5rem;
+}
+
+.objectives-section__intro,
+.objectives-section__outro {
+  display: grid;
+  gap: 0 3.125rem;
+  grid-template-columns: 19rem 27.3125rem 27rem;
+  justify-content: end;
+  margin-bottom: 2.5rem;
+}
+
+.objectives-section__outro {
+  margin-top: 1.5rem;
+}
+
+.objectives-section__column p {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.objectives-section__column p:last-child {
+  margin-bottom: 0;
+}
+
+.objectives-tabs {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(3, 19.125rem);
+  margin-left: auto;
+  max-width: 57.125rem;
+  width: 100%;
+}
+
+.objectives-tabs__tab {
+  align-items: center;
+  border: var(--border-width) solid var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 8.9375rem;
+  justify-content: center;
+  margin: calc(var(--border-width) * -1) 0 0 calc(var(--border-width) * -1);
+  padding: 1.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.objectives-tabs__tab:not(.objectives-tabs__tab--active) {
+  opacity: 0.3;
+}
+
+.objectives-tabs__tab:not(.objectives-tabs__tab--active) .objectives-tabs__icon {
+  opacity: 0;
+}
+
+.objectives-tabs__icon {
+  height: 3.0179rem;
+  width: 3.0179rem;
+}
+
+.objectives-tabs__label {
+  font-family: var(--font-display);
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.objectives-tabs__panels {
+  border: var(--border-width) solid var(--color-white);
+  margin-left: auto;
+  max-width: 57.125rem;
+  min-height: 13.75rem;
+  width: 100%;
+}
+
+.objectives-tabs__panel--empty {
+  min-height: 11.9375rem;
+}
+
+.objectives-tabs__panel[hidden] {
+  display: none;
+}
+
+.objectives-tabs__sphere {
+  height: 6.625rem;
+  object-fit: contain;
+  width: auto;
+  margin-left: 1.2rem;
+}
+
+.objectives-tabs__panel-text {
+  align-items: flex-start;
+  display: grid;
+  gap: 1.5rem 2.5rem;
+  grid-template-columns: 10rem 16.875rem;
+  padding: 1rem 3rem 3.1875rem;
+}
+
+.objectives-tabs__panel-text p {
+  line-height: 1.2;
+}
+
+.objectives-tabs__panel-text--wide {
+  grid-column: 3;
+}
+
+.objectives-section__star {
+  height: 1.8125rem;
+  margin-block: -4rem 1.5rem;
+  width: 1.8125rem;
+}
+
+.objectives-section__footer-text {
+  line-height: 1.2;
+  margin-left: auto;
+  max-width: 27rem;
+}
